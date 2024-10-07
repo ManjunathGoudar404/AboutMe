@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>It's me</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="con">
+  </div>
+  <style></style>
+  <script src="anime.js"></script>
+  <script>
+      const container = document.querySelector(".con");
+      for (var i = 0; i <= 100; i++) {
+          const blocks = document.createElement('div');
+          blocks.classList.add('block');
+          container.appendChild(blocks);
+      }
+
+      function animateBlocks() {
+          anime({
+              targets: '.block',
+              translateX: function () {
+                  return anime.random(-700, 700);
+              },
+              translateY: function () {
+                  return anime.random(-100, 100);
+              },
+              scale: function () {
+                  return anime.random(5, 10);
+              },
+              easing: 'linear',
+              duration: 3000,
+              delay: anime.stagger(10),
+          });
+      }
+
+      animateBlocks();
+  </script>
+  <header>
+    <div class="card">
+      <div class="card-content">
+        <div class="card-front">
+          <p class="sub-title">College</p>
+          <h1 class="title">Basaveshwar Engineering College,</h1>
+          <p class="sub-title"> ,Bagalkote</p>
+        </div>
+
+        <div class="card-back">
+          <div class="back-title">Basaveshwar Engineering College, Bagalkote</div>
+          <div class="About">
+            <span>Branch: </span>Electronics and Communication Engineering .
+          </div>
+          <div class="genre">
+            <span>CGPA:</span>7.73
+          </div>
+          <div class="date">
+            <span>Graduated Year: </span>2024
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-content">
+        <div class="card-front" style="background-image: url(img/img4.jpg); background-color: rgba(16, 16, 16, 0.603); background-position: center;   box-shadow: 0px 0px 30px rgba(13, 14, 15, 0.87);
+  border: 2px solid rgba(255.255.255.0.18);">
+          <p class="sub-title">College</p>
+          <h1 class="title">B.V.V.S POLYTECHNIC (Autonomous) </h1>
+          <p class="sub-title"> ,Bagalkote</p>
+        </div>
+
+        <div class="card-back" style="background-image: url(img/img3.jpg); background-color: rgba(73, 74, 70, 0.671);   box-shadow: 0px 0px 30px rgba(13, 14, 15, 0.87);
+  border: 2px solid rgba(255.255.255.0.18);">
+          <div class="back-title">B.V.V.S POLYTECHNIC (Autonomous), Bagalkote</div>
+          <div class="About">
+            <span>Branch: </span>Electronics and Instrumentation Engineering .
+          </div>
+          <div class="genre">
+            <span>Percenge: </span> 82%
+          </div>
+          <div class="date">
+            <span>Passout Year: </span>2021
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-content">
+        <div class="card-front" style="background-image: url(img/img5.jpg); background-color: rgba(16, 16, 16, 0.603); background-position: center;   box-shadow: 0px 0px 30px rgba(13, 14, 15, 0.87);
+  border: 2px solid rgba(255.255.255.0.18);">
+          <p class="sub-title">School</p>
+          <h1 class="title">Vivekanada High school </h1>
+          <p class="sub-title"> ,Bagalkote</p>
+        </div>
+
+        <div class="card-back" style="background-image: url(img/img6.jpg); background-color: rgba(73, 74, 70, 0.671);   box-shadow: 0px 0px 30px rgba(13, 14, 15, 0.87);
+  border: 2px solid rgba(255.255.255.0.18);">
+          <div class="back-title">Vivekanada High, Bagalkote</div>
+          <!-- <div class="About">
+            <span>Branch: </span>Electronics and Instrumentation Engineering .
+          </div> -->
+          <div class="genre">
+            <span>Percenge: </span> 73.4%
+          </div>
+          <div class="date">
+            <span>Passout Year: </span>2021
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-content">
+        <div class="card-front" style="background-image: url(img/img1.jpg); background-color: rgba(16, 16, 16, 0.603); background-position: center;   box-shadow: 0px 0px 30px rgba(13, 14, 15, 0.87);
+  border: 2px solid rgba(255.255.255.0.18);">
+          <p class="sub-title"></p>
+          <h1 class="title">Final year Projects </h1>
+          <p class="sub-title">In BEC </p>
+        </div>
+
+        <div class="card-back" style="background-image: url(img/img2.jpg); background-color: rgba(73, 74, 70, 0.671);   box-shadow: 0px 0px 30px rgba(13, 14, 15, 0.87);
+  border: 2px solid rgba(255.255.255.0.18);">
+          <section class="projects">
+
+            <div>
+              <div class="back-title">Smart Home Technology using Raspberry Pi (2023-2024)</div>
+
+              <ul>
+                <li>Implemented facial recognition on Raspberry Pi for user authorization.</li>
+                <li>Integrated sensors (PIR, gas, ultrasonic) for environmental monitoring.</li>
+                <li>Developed an Android app for remote monitoring and system control.</li>
+              </ul>
+            </div>
+
+
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+        <div class="card">
+      <div class="card-content">
+        <div class="card-front" style="background-image: url(img/back.png); ">
+          <p class="sub-title"></p>
+          <h1 class="title">Soft ware Tools</h1>
+          <p class="sub-title"></p>
+        </div>
+
+        <div class="card-back" style=" background-image: none; ">
+          <div class="card-tools" >
+            <div class="div1" ><img src="img/img7.png" alt=""></div>
+            <div class="div1" ><img src="img/img8.png" alt=""></div>
+            <div class="div1" ><img src="img/img9.png" alt=""></div>
+            <div class="div1" ><img src="img/img10.png" alt=""></div>
+            <div class="div1" ><img src="img/img11.png" alt=""></div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-content">
+        <div class="card-front" style="background-image: url(img/img4.jpg); background-color: rgba(16, 16, 16, 0.603); background-position: center;   box-shadow: 0px 0px 30px rgba(13, 14, 15, 0.87);
+  border: 2px solid rgba(255.255.255.0.18);">
+          <p class="sub-title"></p>
+          <h1 class="title">Final year Projects </h1>
+          <p class="sub-title">In BVVS</p>
+        </div>
+
+        <div class="card-back" style="background-image: url(img/img3.jpg); background-color: rgba(73, 74, 70, 0.671);   box-shadow: 0px 0px 30px rgba(13, 14, 15, 0.87);
+  border: 2px solid rgba(255.255.255.0.18);">
+          <section class="projects">
+
+            <div>
+              <div class="back-title">Automatic Garbage Pickup System</div>
+
+              
+              <ul>
+                  <li>Implemented an Arduino-based system for automated garbage pickup.</li>
+                  <li>Enabled autonomous waste collection from designated points and transport to central dumpsites.</li>
+              </ul>
+          </div>
+
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    
+    
+
+
+
+
+  </header>
+</body>
+
+</html>
